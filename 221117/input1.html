@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      width: 200px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <input type="text"><br>
+    <input type="password"><br>
+    <input type="email"><br>
+    <input type="tel"><br>
+    <input type="tel"><br>
+    <input type="search"><br>
+    <input type="number"><br>
+    <input type="range" max="10" min="0" value="0"><br>
+    <input type="number" max="10" min="0" value="0">
+    <!-- for, id 속성이 묶이면 텍스트,버튼이 체크가 된다   name끼리 같으면 중복선택이 안됨-->
+    <input type="radio" name="job" id="input-job1"> <label for="input-job1">학생</label>
+    <input type="radio" name="job" id="input-job2"> <label for="input-job2">교직원</label>
+    <input type="radio" name="job2" id="input-job3"> <label for="input-job3">사무원</label>
+    <input type="radio" name="job2" id="input-job4"> <label for="input-job4">무직</label>
+    
+    <!-- multiple 다중선택, accept=".gif, .jpg, .png" -->
+    <input type="file" multiple accept=".gif, .jpg, .png">
+    <input type="hidden" name="username" value="seunguk">
+  </form>
+  
+</body>
+</html>
