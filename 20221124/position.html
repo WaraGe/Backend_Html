@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1 {
+      /* 기준점에 다르게 다른 물체가 있다면 원하는 위치에 선언이 불가능 */
+      /* absolute는 relative 안에서만 사용하는것이 좋다. relative 속성을 찾아가기 때문에 최대 바디까지 간다 */
+      position: relative;
+      /* position을 지우면 top, left가 안된다 */
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+    .box2 {
+      position: absolute; /*내가 원하는 위치에 선언가능*/
+      right: 100px;
+
+      width: 50px;
+      height: 50px;
+
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <div class="box2"></div>
+  </div>
+  
+</body>
+</html>
